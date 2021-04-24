@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+   <!--dont use GET method if form is submitting sensitive info with password. GET has limit of 3000 characters per url.-->
     <form action="contactform.php" method="POST">
         <input type="text" name="email" placeholder="Write your email...">
         <input type="text" name="email" value="Write your email...">
@@ -15,6 +15,12 @@
        Female: <input type="radio" name="gender" value="Female">
        Other: <input type="radio" name="gender" value="Other" checked>
        <input type="password" name="pwd" placeholder="Password">
+       <textarea name="message" placeholder="Write a message!"></textarea>
+       <select name="car">
+        <option value="car1">Ford</option>
+        <option value="car1">Mercedes</option>
+        <option value="car1">Chevy</option>
+       </select>
        <input type="submit" name="submit">
     </form>
 
